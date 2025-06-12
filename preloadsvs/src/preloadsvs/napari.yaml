@@ -1,0 +1,15 @@
+name: preloadsvs
+display_name: Preloadsvs
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: preloadsvs.get_reader
+      python_name: preloadsvs._reader:napari_get_reader
+      title: Open data with Preloadsvs
+  readers:
+    - command: preloadsvs.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.svs']
