@@ -1,0 +1,2 @@
+[napari.manifest]
+rgb2hed = rgb2hed:napari.yaml
