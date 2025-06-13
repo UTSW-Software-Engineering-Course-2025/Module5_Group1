@@ -1,0 +1,2 @@
+[napari.manifest]
+dlmodel = dlmodel:napari.yaml
