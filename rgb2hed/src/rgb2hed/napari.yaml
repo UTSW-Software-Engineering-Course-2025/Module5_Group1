@@ -1,0 +1,15 @@
+name: rgb2hed
+display_name: Rgb2hed
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: rgb2hed.reader_function
+      title: Read files
+      python_name: rgb2hed._reader:reader_function
+  readers:
+    - command: rgb2hed.reader_function
+      accepts_directories: false
+      filename_patterns: ['*.svs']
